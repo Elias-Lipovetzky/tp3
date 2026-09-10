@@ -14,6 +14,8 @@ sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 
 sock.connect((host, port))
 
-sock.sendall(message.encode("utf-8"))
+sock.sendall(b"UNO")
+sock.sendall(b"DOS")
+sock.sendall(b"TRES")
 
 sock.close()

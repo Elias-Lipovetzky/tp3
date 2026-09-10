@@ -51,7 +51,7 @@ def copy_bytes(source, destination, direction):
             destination.sendall(data)
             total += len(data)
 
-            print(f"{direction}: {len(data)} bytes (total: {total})")
+            print(f"{direction}: {len(data)} bytes (total: {data!r})")
 
     except OSError as error:
         print(f"{direction}: {error}")
